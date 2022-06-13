@@ -128,7 +128,7 @@ class Context implements \ArrayAccess
      *
      * @return  bool
      */
-    public function offsetExists($id)
+    public function offsetExists($id): bool
     {
         return true === array_key_exists($id, $this->_data);
     }
@@ -139,7 +139,7 @@ class Context implements \ArrayAccess
      * @param   string  $id    ID.
      * @return  void
      */
-    public function offsetUnset($id)
+    public function offsetUnset($id): void
     {
         unset($this->_data[$id]);
 
@@ -153,7 +153,7 @@ class Context implements \ArrayAccess
      * @return  mixed
      * @throws  \Hoa\Ruler\Exception
      */
-    public function __get($name)
+    public function __get($name): mixed
     {
         return $this->offsetGet($name);
     }
