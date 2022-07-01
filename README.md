@@ -1,59 +1,28 @@
-<p align="center">
-  <img src="https://static.hoa-project.net/Image/Hoa.svg" alt="Hoa" width="250px" />
-</p>
+## Reasons to fork
+The Hoa project was archived, and no upgrades or patches are neither provided nor accepted by merge requests.
 
----
+HOA Packages include some code that is Deprecated for PHP 8.0 and PHP 8.1, but we needed these packages to run on modern PHP versions.
 
-<p align="center">
-  <a href="https://travis-ci.org/hoaproject/Ruler"><img src="https://img.shields.io/travis/hoaproject/Ruler/master.svg" alt="Build status" /></a>
-  <a href="https://coveralls.io/github/hoaproject/Ruler?branch=master"><img src="https://img.shields.io/coveralls/hoaproject/Ruler/master.svg" alt="Code coverage" /></a>
-  <a href="https://packagist.org/packages/hoa/ruler"><img src="https://img.shields.io/packagist/dt/hoa/ruler.svg" alt="Packagist" /></a>
-  <a href="https://hoa-project.net/LICENSE"><img src="https://img.shields.io/packagist/l/hoa/ruler.svg" alt="License" /></a>
-</p>
-<p align="center">
-  Hoa is a <strong>modular</strong>, <strong>extensible</strong> and
-  <strong>structured</strong> set of PHP libraries.<br />
-  Moreover, Hoa aims at being a bridge between industrial and research worlds.
-</p>
+## What's changed in from?
+The changes mainly affected the return data type hinting in methods declaration, access to uninitialized properties.
 
-# Hoa\Ruler
+## How to use
+We've currently forked the following packages, primarily to make hoa/ruler work with PHP 8.1:
 
-[![Help on IRC](https://img.shields.io/badge/help-%23hoaproject-ff0066.svg)](https://webchat.freenode.net/?channels=#hoaproject)
-[![Help on Gitter](https://img.shields.io/badge/help-gitter-ff0066.svg)](https://gitter.im/hoaproject/central)
-[![Documentation](https://img.shields.io/badge/documentation-hack_book-ff0066.svg)](https://central.hoa-project.net/Documentation/Library/Ruler)
-[![Board](https://img.shields.io/badge/organisation-board-ff0066.svg)](https://waffle.io/hoaproject/ruler)
+<table>
+<tr><th>Original package</th><th>Forked package</th></tr>
+<tr><td>hoa/ruler</td><td>hiqdev/hoa-ruler</td></tr>
+<tr><td>hoa/compiler</td><td>hiqdev/hoa-compiler</td></tr>
+<tr><td>hoa/protocol</td><td>hiqdev/hoa-protocol</td></tr>
+<tr><td>hoa/iterator</td><td>hiqdev/hoa-iterator</td></tr>
+</table>
+You can simply replace requirements in composer.json from hoa packages to the corresponding forked packages: there is no need to change something in the codebase.
 
-This library allows to manipulate a rule engine. Rules can be written
-by using a dedicated language, very close to SQL. Therefore, they can
-be written by a user and saved in a database.
+If you use someone's package, that requires hoa – simply add forks to your project root composer.json: we have marked forks as a replacement, so composer will install them instead of the original packages.
 
-Such rules are useful, for example, for commercial solutions that need
-to manipulate promotion or special offer rules written by a user. To
-quote [Wikipedia](https://en.wikipedia.org/wiki/Business_rules_engine):
+## Versions
+We've forked from the latest hoa package versions and bump own versions starting from 1.0.
 
-> A business rules engine is a software system that executes one or more
-> business rules in a runtime production environment. The rules might come from
-> legal regulation (“An employee can be fired for any reason or no reason but
-> not for an illegal reason”), company policy (“All customers that spend more
-> than $100 at one time will receive a 10% discount”), or other sources. A
-> business rule system enables these company policies and other operational
-> decisions to be defined, tested, executed and maintained separately from
-> application code.
-
-[Learn more](https://central.hoa-project.net/Documentation/Library/Ruler).
-
-## Installation
-
-With [Composer](https://getcomposer.org/), to include this library into
-your dependencies, you need to
-require [`hoa/ruler`](https://packagist.org/packages/hoa/ruler):
-
-```sh
-$ composer require hoa/ruler '~2.0'
-```
-
-For more installation procedures, please read [the Source
-page](https://hoa-project.net/Source.html).
 
 ## Testing
 

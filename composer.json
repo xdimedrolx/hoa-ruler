@@ -7,7 +7,8 @@
         "php" : ">=7.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "hoa/test": "~2.0"
     },
     "replace": {
         "hoa/ruler": "~2.17"
