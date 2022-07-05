@@ -11,7 +11,7 @@
         "hoa/test": "~2.0"
     },
     "replace": {
-        "hoa/ruler": "~2.17"
+        "hoa/ruler": "~2.0"
     },
     "autoload": {
         "psr-4": {
