@@ -3,8 +3,15 @@
     "description": "The Hiqdev Hoa\\Ruler library.",
     "type"       : "library",
     "keywords"   : ["library", "ruler"],
+    "license"    : "BSD-3-Clause",
     "require": {
-        "php" : ">=7.4"
+        "php" : ">=7.4",
+        "hoa/compiler"   : "~3.0",
+        "hoa/consistency": "~1.0",
+        "hoa/exception"  : "~1.0",
+        "hoa/file"       : "~1.0",
+        "hoa/protocol"   : "~1.0",
+        "hoa/visitor"    : "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
