@@ -8,15 +8,19 @@
         {
             "type": "vcs",
             "url": "https://github.com/xdimedrolx/hoa-compiler"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/xdimedrolx/hoa-protocol"
         }
     ],
     "require": {
         "php" : ">=7.4",
-        "hiqdev/hoa-compiler": "dev-master",
+        "hiqdev/hoa-compiler": "^1.0",
         "hoa/consistency": "~1.0",
         "hoa/exception"  : "~1.0",
         "hoa/file"       : "~1.0",
-        "hiqdev/hoa-protocol": "dev-master",
+        "hiqdev/hoa-protocol": "^1.0",
         "hoa/visitor"    : "~2.0"
     },
     "require-dev": {
