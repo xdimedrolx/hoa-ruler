@@ -4,13 +4,19 @@
     "type"       : "library",
     "keywords"   : ["library", "ruler"],
     "license"    : "BSD-3-Clause",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/xdimedrolx/hoa-compiler"
+        }
+    ],
     "require": {
         "php" : ">=7.4",
-        "hoa/compiler"   : "~3.0",
+        "hiqdev/hoa-compiler": "dev-master",
         "hoa/consistency": "~1.0",
         "hoa/exception"  : "~1.0",
         "hoa/file"       : "~1.0",
-        "hoa/protocol"   : "~1.0",
+        "hiqdev/hoa-protocol": "dev-master",
         "hoa/visitor"    : "~2.0"
     },
     "require-dev": {
