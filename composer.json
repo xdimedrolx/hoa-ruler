@@ -1,26 +1,16 @@
 {
-    "name"       : "hiqdev/hoa-ruler",
+    "name"       : "xdimedrolx/hoa-ruler",
     "description": "The Hiqdev Hoa\\Ruler library.",
     "type"       : "library",
     "keywords"   : ["library", "ruler"],
     "license"    : "BSD-3-Clause",
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/xdimedrolx/hoa-compiler"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/xdimedrolx/hoa-protocol"
-        }
-    ],
     "require": {
         "php" : ">=7.4",
-        "hiqdev/hoa-compiler": "^1.0",
+        "xdimedrolx/hoa-compiler": "^1.0",
         "hoa/consistency": "~1.0",
         "hoa/exception"  : "~1.0",
         "hoa/file"       : "~1.0",
-        "hiqdev/hoa-protocol": "^1.0",
+        "xdimedrolx/hoa-protocol": "^1.0",
         "hoa/visitor"    : "~2.0"
     },
     "require-dev": {
